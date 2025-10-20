@@ -1,0 +1,16 @@
+server:
+  port: ${PORT}
+  forward-headers-strategy: framework
+np:
+  files:
+    root: ${BUG_IMAGES_DIR}
+  auth:
+    endpoint: ${AUTH_VALIDATE_ENDPOINT}
+spring:
+  application:
+    name: bug
+  datasource:
+    url: ${BUG_DATASOURCE_URL}
+    username: ${BUG_DATASOURCE_USERNAME}
+    password: ${BUG_DATASOURCE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver

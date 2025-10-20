@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Small Book of Bug</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="submit.css">
+    <script type="module" src="submit.js"></script>
+</head>
+<body>
+<div class="form-page">
+    <div class="form">
+        <div>
+            <img src="sbob.png"><br>
+            <p class="rounded" id="back"><a href="https://pub.colonq.computer/~nichepenguin/kno/sbob.html"> &#60;== back </a></p>
+            <p class="subtitle">...and other little creatures</p>
+            <div class ="header">
+                <h3>Bug Submission Form</h3>
+            </div>
+            <div class="bar">
+                <span>Hi! Here you can submit YOUR bug or any other little (or medium-sized!) creature for ALL to see in the small book of bug. I'd like to
+ have them all identified at least with some confidence, so I'll appreciate any hint you can give for me to work it out.
+ You can still just send an image though, but if I fail to determine which species it is I won't post it :c</span>
+            </div>
+            <div class="bar" id="image-div">
+                <span>Image:</span>
+                <input id="file-fake" readonly type="text" name="file"/>
+                <input id="file" type="file" name="file"/>
+                <button id="browse" type="button">Browse...</button>
+            </div>
+            <div class="bar" id="name-div">
+                <span>Name:</span>
+                <input type="text" id="name" name="name" rows="1">
+            </div>
+            <div class="bar" id="latin">
+                <span>Scientific Name:</span>
+                <input type="text" id="latin-name" name="name" rows="1">
+            </div>
+
+            <div class="bar" id="confidence">
+                <span>Identification Confidence: </span>
+                <label for="one">1</label><input type="radio" id="one" name="confidence" value="1" checked />
+                <label for="two">2</label><input type="radio" id="two" name="confidence" value="2" />
+                <label for="three">3</label><input type="radio" id="three" name="confidence" value="3" />
+                <label for="four">4</label><input type="radio" id="four" name="confidence" value="4" />
+                <label for="five">5</label><input type="radio" id="five" name="confidence" value="5" />
+            </div>
+
+            <div class="bar" id="hint">
+                <span>Identification Hint: </span>
+                <input type="text" id="hint-text" name="hint" rows="1"></input>
+                <br>
+                <span>(Anything helps, won't be public but could be inferred)</span>
+            </div>
+
+            <div class="bar" id="detail">
+                <input type="radio" id="bug-radio" name="detail" value="bug" checked />
+                <label for="bug-radio">Class Insecta (an insect)</label> <br>
+                <input type="radio" id="spider-radio" name="detail" value="spider"/>
+                <label for="spider-radio">Class Arachnida (a spider)</label> <br>
+                <input type="radio" id="cat-radio" name="detail" value="mrow"/>
+                <label for="cat-radio">Cat (a bug)</label><br>
+                <input type="radio" id="other-radio" name="detail" value="not_bug"/>
+                <label for="other-radio">Other (mammal, mollusk, etc.)</label>
+            </div>
+
+            <div class="bar" id="anonymous">
+                <input type="checkbox" id="anonymous-cb" name="anonymous" value="yes"/>
+                <label for="anonymous-cb">Post anonymously</label>
+            </div>
+
+            <div class="bar" id="success">
+                <span id="success-text">Thank you! I'll check it during the week :3</span>
+            </div>
+
+            <div class="bar" id="error">
+                <span id="error-text"></span>
+            </div>
+
+            <img class="bug-loading" src="bug.png">
+            <button id="submit-button" type="button">Submit!</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
