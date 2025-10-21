@@ -6,6 +6,8 @@ np:
     root: ${BUG_IMAGES_DIR}
   auth:
     endpoint: ${AUTH_VALIDATE_ENDPOINT}
+  clonk:
+    redeem-endpoint: ${CLONK_REDEEM_API}
 spring:
   servlet:
     multipart:
