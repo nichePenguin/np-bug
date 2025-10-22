@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   background: #FFFFFF;
-  color: #00CC00;
+  color: #33AA33;
   font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
 }
 
@@ -22,7 +22,7 @@ html, body {
 
 button {
   background-color: #EEFFEE;
-  color: #00CC00;
+  color: #33AA33;
   position: relative;
   border-radius: 16px;
   left: 340px;
@@ -207,11 +207,11 @@ button {
 }
 
 a:link {
-  color: #00CC00;
+  color: #33AA33;
 }
 
 a:visited {
-  color: #00CC00;
+  color: #33AA33;
 }
 
 .titlebar {
